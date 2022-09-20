@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: none;
+}
+
+.wrapper {
+    width: 100%;
+    background-color: green;
+}
+
+.section {
+    width: 95%;
+    max-width: 1280px;
+    background-color: rgb(52, 52, 190);
+    margin: 15px auto;
+}
+
+
+    @media only screen and (max-width: 768px) {
+                  .hide-on-mobile {
+        background-color: lightblue;
+        display: none;
+
+        }
