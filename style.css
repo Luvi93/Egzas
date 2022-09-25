@@ -255,3 +255,41 @@ Need to rename to "About" */
     position: fixed;
     top: 80px;
 }
+
+/*UPSELL SECTION*/
+
+.upsell {
+    position: relative;
+    background-image: url(background.svg);
+    background-position: top 1% right 1%;
+    background-size: cover;
+    width: 428px;
+    height: 326px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    marigin-left: 20px;
+}
+
+.upsell-content {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.upsell-title {
+   margin-bottom: 16px;
+   font-family: Inter;
+font-size: 40px;
+font-weight: 500;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: left;
+
+
+}
+
+.upsell-text {
+
+}
