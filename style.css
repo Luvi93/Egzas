@@ -302,7 +302,8 @@ Need to rename to "About" */
     flex-wrap: wrap;
     display: flex;
     padding: 32px;
-    gap: 20px;
+    gap: 19px;
+    justify-content: space-between;
 }
 
 /*
