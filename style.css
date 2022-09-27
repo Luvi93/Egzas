@@ -6,6 +6,7 @@
 
 body {
     background: white;
+    font-family: Inter;
 }
 
 .sign-up {
@@ -174,6 +175,9 @@ Need to rename to "About" */
     width: 100%;
     background-position: top -190% right -370px;
     padding: 10px 20px;
+
+    /* reikia pakeisti background size
+    background-size: 175 px 275px; ir sutvarkyti background position*/
 }
 
 #hero h4 {
@@ -184,7 +188,6 @@ Need to rename to "About" */
     left: 32px;
     top: 148px;
     color: #FF3998;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -201,7 +204,6 @@ Need to rename to "About" */
     left: 32px;
     top: 191px;
     color: #111111;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
@@ -217,7 +219,6 @@ Need to rename to "About" */
     left: 32px;
     top: 331px;
     color: #555555;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -229,7 +230,6 @@ Need to rename to "About" */
     position: relative;  
     padding: 20px 50px;
     border: none;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -263,7 +263,7 @@ Need to rename to "About" */
     background-image: url(background.svg);
     background-position: top 1% right 1%;
     background-size: cover;
-    width: 428px;
+    width: auto;
     height: 326px;
     display: flex;
     justify-content: center;
@@ -279,17 +279,60 @@ Need to rename to "About" */
 }
 
 .upsell-title {
-   margin-bottom: 16px;
-   font-family: Inter;
-font-size: 40px;
-font-weight: 500;
-line-height: 48px;
-letter-spacing: 0em;
-text-align: left;
-
-
+    margin-bottom: 16px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 .upsell-text {
-
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 150%;
+    text-align: left;
+    margin-bottom: -100px;
 }
+
+/*Press section*/
+
+.brands-list {
+    flex-wrap: wrap;
+    display: flex;
+    padding: 32px;
+    gap: 20px;
+}
+
+/*
+.section {
+    width: 95%;
+    max-width: 1280px;
+    background-color: rgb(52, 52, 190);
+    margin: 15px auto;
+}
+.wrapper {
+    width: 100%;
+    background-color: green;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.section {
+    max-width: 1280px;
+    background-color: rgb(52, 52, 190);
+}
+
+
+@media only screen and (max-width: 768px) {
+                  .hide-on-mobile {
+        background-color: lightblue;
+        display: none;
+
+        }
+    } 
+*/
+
+
+
