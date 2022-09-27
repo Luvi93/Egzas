@@ -335,5 +335,18 @@ Need to rename to "About" */
     } 
 */
 
+/* Showcase section */
+
+.showcase-text{
+    position: absolute;
+    width: 364px;
+    height: 102px;
+    left: 32px;
+}
+
+.showcase-text p{
+    margin-top: 16px;
+}
+
 
 
