@@ -237,6 +237,7 @@ Need to rename to "About" */
     background: none;
     margin-top: 350px;
 }
+
 #hero button::before {  
     content: "";
     position: absolute;
@@ -350,3 +351,72 @@ Need to rename to "About" */
 
 
 
+<<<<<<< Updated upstream
+=======
+.fourth-card{
+    position: relative;
+    display: flex;
+    max-width: 290px;
+    flex-direction: row;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    background-color: #EEEEEE;
+    border-radius: 16px;
+    font-size: 10px;
+    font-family: Inter;
+    letter-spacing: 0em;
+    line-height: 25px;
+    justify-content: space-between;
+    height: auto;
+}
+
+#footer-upsell{
+    display: flex;
+    background-image: url(upsell-footer-image.svg);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: 853px;
+    height: 800px;
+    width: 100%;
+    padding: 10px 20px;
+    border-width: 1280px;
+    border-top: solid #EEEEEE;
+    border-bottom: solid#EEEEEE;
+    border-radius: 2px;
+}
+
+.footer-upsell{
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+#footer-upsell button { 
+    position: relative;  
+    padding: 20px 50px;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    background: none;
+    margin-top: 350px;
+}
+
+#footer-upsell button::before {  
+    content: "";
+    position: absolute;
+    top: 0;  
+    left: 0;  
+    right: 0;  
+    bottom: 0;  
+    border-radius: 50px;
+    border: 5px solid transparent;
+    background: linear-gradient(45deg,purple,orange) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+}
+    
+>>>>>>> Stashed changes
