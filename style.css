@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +23,6 @@ body {
     justify-content: space-between;
     align-items: center;
     background: white;
-    padding: 0 25px;
     transition: 0.3s;
 }
 
@@ -136,7 +136,7 @@ width: 24px;
     display: block;
     }
 .header{
-    padding: 10px 20px;
+    padding-top: 0px;
 }
 .menu {
     justify-content: space-around;
@@ -165,28 +165,19 @@ width: 24px;
 /* Home page
 Need to rename to "About" */
 #hero {
-    display: flex;
-    background-image: url(graphic.svg);
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
     background-repeat: no-repeat;
     height: 800px;
     width: 100%;
     background-position: top -190% right -370px;
-    padding: 10px 20px;
-
-    /* reikia pakeisti background size
-    background-size: 175 px 275px; ir sutvarkyti background position*/
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
 }
 
 #hero h4 {
-    padding-bottom: 100px;
-    position: absolute;
     width: auto;
     height: auto;
-    left: 32px;
-    top: 148px;
     color: #FF3998;
     font-style: normal;
     font-weight: 700;
@@ -194,36 +185,30 @@ Need to rename to "About" */
     line-height: 19px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-top: 40px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 #hero h1 {
-    position: absolute;
     width: 274px;
     height: 116px;
-    left: 32px;
-    top: 191px;
     color: #111111;
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
-    margin-top: 100px;
+    margin-bottom: 32px;
 }
 
 #hero p {
-    padding-bottom: 100px;
-    position: absolute;
     width: 274px;
     height: 120px;
-    left: 32px;
-    top: 331px;
     color: #555555;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
-    margin-top: 150px;
+    margin-bottom: 41px;
 }
 
 #hero button { 
@@ -235,7 +220,6 @@ Need to rename to "About" */
     font-size: 20px;
     line-height: 150%;
     background: none;
-    margin-top: 350px;
 }
 #hero button::before {  
     content: "";
@@ -251,9 +235,8 @@ Need to rename to "About" */
     -webkit-mask-composite: destination-out;
 }
 
-.sign-up-button {
-    position: fixed;
-    top: 80px;
+.hero-content {
+
 }
 
 /*UPSELL SECTION*/
@@ -270,7 +253,7 @@ Need to rename to "About" */
     align-items: flex-start;
     flex-direction: column;
     text-align: left;
-    margin-left: 20px;
+
 }
 
 .upsell-content {
@@ -293,39 +276,11 @@ Need to rename to "About" */
     letter-spacing: 0em;
     line-height: 150%;
     text-align: left;
-    margin-bottom: -100px;
-}
-
-/*Press section*/
-
-.brands-list {
-    flex-wrap: wrap;
-    display: flex;
-    padding: 32px;
-    gap: 19px;
-    justify-content: space-between;
-}
-
-/*
-.section {
-    width: 95%;
-    max-width: 1280px;
-    background-color: rgb(52, 52, 190);
-    margin: 15px auto;
-}
-.wrapper {
     width: 100%;
-    background-color: green;
-    padding-left: 32px;
     padding-right: 32px;
 }
 
-.section {
-    max-width: 1280px;
-    background-color: rgb(52, 52, 190);
-}
-
-
+/* ar sito apacioje reikia?*/
 @media only screen and (max-width: 768px) {
                   .hide-on-mobile {
         background-color: lightblue;
@@ -334,39 +289,62 @@ Need to rename to "About" */
         }
     } 
 */
+/*Brand section*/
+
+#brands {
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid #c3c3c3;
+
+}
+
+.brands-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-top: 56px;
+    margin-bottom: 56px;
+    size: 500px;
+}
+
+.brands-list img{
+    width: 170px;
+    height: 40px;
+    margin-bottom: 27px;
+}
+
 
 /* Showcase section */
 
 #showcase {
-    display: flex;
-    align-items: flex-start;
-    max-width: 800px;
-    height: auto;
-    background-color: white;
-    padding-left: 32px;
-    padding-right: 32px;
     
 }
 
+#showcase p{
+    color: #555555;
+}
+
 .showcase-text{
-    position: absolute;
-    width: 364px;
-    height: 102px;
-    left: 32px;
+    text-align: left;
+    
 }
 
 .info-cards {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    width: 1440px;
-    padding-right: 1000px;
+}
+
+.showcase-text {
+    width: 100%;
 }
 
 .showcase-text p{
-    position: absolute;
-    display: block;
     margin-top: 16px;
 }
 
@@ -385,7 +363,6 @@ Need to rename to "About" */
     line-height: 25px;
     justify-content: space-between;
     height: auto;
-    margin-right: 40px;
 }
 
 .card-box-group-one h5{
@@ -426,7 +403,6 @@ Need to rename to "About" */
     line-height: 25px;
     justify-content: space-between;
     height: auto;
-    margin-right: 40px;
 }
 
 .third-card {
@@ -444,7 +420,6 @@ Need to rename to "About" */
     line-height: 25px;
     justify-content: space-between;
     height: auto;
-    margin-right: 40px;
 }
 
 .fourth-card{
@@ -463,3 +438,158 @@ Need to rename to "About" */
     justify-content: space-between;
     height: auto;
 }
+
+/*footer upsell*/
+
+#footer-upsell {
+    display: flex;
+    background-image: url(upsell-footer-image.svg);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    background-position: top 50px right 70px;
+    margin-top: 40px;
+    border-top: 1px solid #EEEEE
+}
+
+#footer-upsell h4 {
+    position: relative;
+    width: auto;
+    height: auto;
+    color: #FF3998;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+#footer-upsell h1 {
+    position: relative;
+    color: #111111;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    margin-top: 100px;
+}
+
+#footer-upsell p {
+    position: relative;
+    height: 120px;
+    color: #555555;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+#footer-upsell button { 
+    position: relative;  
+    padding: 20px 50px;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    background: none;
+    margin-top: 10px;
+}
+#footer-upsell button::before {  
+    content: "";
+    position: absolute;
+    top: 0;  
+    left: 0;  
+    right: 0;  
+    bottom: 0;  
+    border-radius: 50px;
+    border: 5px solid transparent;
+    background: linear-gradient(45deg,purple,orange) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+}
+
+/*FOOTER*/
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo-icons {
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.logo-icons p img {
+    padding: 80px;
+    margin: 20px;
+}
+
+.lists {
+    display: flex;
+    flex-direction: row;
+}
+
+.about {
+    
+}
+
+
+
+
+/*reikia isivest visus div paddingus*/
+@media only screen and (max-width: 800px) {
+    .header {
+
+    }
+  }
+
+  /*Deivio*/
+  .wrapper {
+    padding: 30px 0;
+    background-color: #F8F8F8;
+  }
+  
+  .container {
+    box-shadow: rgba(30, 30, 121, 0.2) 0px 7px 29px 0px;
+    margin: 0 auto;
+    max-width: 1440px;
+    background-color: white;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    box-sizing: border-box;
+    
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .container {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    .info-cards {
+        flex-direction: column;
+    }
+    .display-none {
+        display: none;
+    }
+    #hero {
+        background-image: url(graphic.svg);
+    }
+    .brands-list img {
+        width: 50%;
+    }
+  }
+
+  @media only screen and (mix-width: 801px) {
+    
+  }
+  
