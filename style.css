@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -162,8 +161,7 @@ width: 24px;
 }
 
 /* HERO SECION*/
-/* Home page
-Need to rename to "About" */
+
 #hero {
     background-repeat: no-repeat;
     height: 800px;
@@ -235,10 +233,6 @@ Need to rename to "About" */
     -webkit-mask-composite: destination-out;
 }
 
-.hero-content {
-
-}
-
 /*UPSELL SECTION*/
 
 .upsell {
@@ -280,22 +274,11 @@ Need to rename to "About" */
     padding-right: 32px;
 }
 
-/* ar sito apacioje reikia?*/
-@media only screen and (max-width: 768px) {
-                  .hide-on-mobile {
-        background-color: lightblue;
-        display: none;
-
-        }
-    } 
-*/
 /*Brand section*/
 
 #brands {
     padding-left: 32px;
     padding-right: 32px;
-    border: 1px solid #c3c3c3;
-
 }
 
 .brands-list {
@@ -303,8 +286,6 @@ Need to rename to "About" */
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 32px;
-    padding-right: 32px;
     margin-top: 56px;
     margin-bottom: 56px;
     size: 500px;
@@ -319,17 +300,12 @@ Need to rename to "About" */
 
 /* Showcase section */
 
-#showcase {
-    
-}
-
 #showcase p{
     color: #555555;
 }
 
 .showcase-text{
     text-align: left;
-    
 }
 
 .info-cards {
@@ -452,7 +428,7 @@ Need to rename to "About" */
     width: 100%;
     background-position: top 50px right 70px;
     margin-top: 40px;
-    border-top: 1px solid #EEEEE
+    border-top: 2px solid lightgrey;
 }
 
 #footer-upsell h4 {
@@ -486,6 +462,7 @@ Need to rename to "About" */
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
+    text-align: left;
 }
 
 #footer-upsell button { 
@@ -513,38 +490,6 @@ Need to rename to "About" */
     -webkit-mask-composite: destination-out;
 }
 
-/*FOOTER*/
-
-#footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.logo-icons {
-    display: flex;
-    width: auto;
-    height: auto;
-}
-
-.logo-icons p img {
-    padding: 80px;
-    margin: 20px;
-}
-
-.lists {
-    display: flex;
-    flex-direction: row;
-}
-
-.about {
-    
-}
-
-
-
-
 /*reikia isivest visus div paddingus*/
 @media only screen and (max-width: 800px) {
     .header {
@@ -552,7 +497,7 @@ Need to rename to "About" */
     }
   }
 
-  /*Deivio*/
+
   .wrapper {
     padding: 30px 0;
     background-color: #F8F8F8;
@@ -567,13 +512,12 @@ Need to rename to "About" */
     padding-left: 80px;
     padding-right: 80px;
     box-sizing: border-box;
-    
   }
   
   @media only screen and (max-width: 800px) {
     .container {
       padding-left: 32px;
-      padding-right: 32px;
+
     }
     .info-cards {
         flex-direction: column;
@@ -593,3 +537,98 @@ Need to rename to "About" */
     
   }
   
+/*FOOTER*/
+
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 120px;
+}
+
+.box{
+    padding-right: 70px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.logo-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 233px;
+    height: 136px;
+    margin-top: 25px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-spacing{
+    margin-right: 15px;
+}
+
+.logo-icons img {
+    width: 83%;
+    padding: 0;
+}
+
+.lists {
+    display: flex;
+    flex-direction: row;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.copyright img {
+    padding-right: 4px;
+}
+
+.Launching {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.box li {
+    padding-bottom: 8px;
+    line-height: 1.5em;
+    font-style: normal;
+    font-family: 400;
+    list-style: none;
+    padding-left: 0;
+}
+
+.box a {
+    text-decoration: none;
+}
+
+.box h8 {
+    padding-bottom: 28px;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    color: #555555;
+    font-weight: 700;
+}
+
+.footer-end {
+    display: flex;
+    flex-direction: row;
+}
+
+.copyright {
+    display: flex;
+}
